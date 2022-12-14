@@ -29,7 +29,7 @@ nav {
 }
 
 .navbar-brand img {
-    width: 6rem;
+    width: 7rem;
     margin-left: 2rem;
 }
 
@@ -77,8 +77,13 @@ nav {
     color: #fff;
 }
 
-.navbar-toggler {
+.nav-boton {
     color: #fff;
+    border: none;
+}
+
+.nav-boton i{
+    font-size: 2.3rem;
 }
 
 /* hero */
@@ -266,4 +271,17 @@ footer li {
     margin: 0 1rem;
     padding: 3rem 0 2rem;
     font-size: 1rem;
+}
+
+
+/* pagina permiso precario */
+
+.documento-pdf-container{
+    background-color: #000;
+   
+  
+}
+.documento-pdf{ 
+    width: 100%;
+    height: 700px;
 }
