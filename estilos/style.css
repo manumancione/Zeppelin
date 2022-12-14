@@ -1,0 +1,269 @@
+/* estilos generales */
+* {
+    font-family: 'Cormorant',
+        serif;
+
+
+}
+
+
+/* navbar */
+nav {
+    position: fixed;
+}
+
+.navbar {
+    background-color: rgb(29, 28, 28);
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.nav-posicion {
+    justify-content: end;
+}
+.navbar-nav {
+    justify-content: end;
+    padding-right: 1rem;
+}
+
+.navbar-brand img {
+    width: 6rem;
+    margin-left: 2rem;
+}
+
+.botonCierre {
+    background-color: inherit;
+    border: none;
+   
+}
+
+.iconoCierre {
+     color: #fff;
+     font-size: 1.3rem;
+}
+
+@media screen and (max-width: 420px) {
+    .navbar-brand img {
+        width: 5.5rem;
+        margin-left: 0.5rem;
+    }
+
+
+}
+
+.nav-link {
+    color: #fff;
+    letter-spacing: 0.12rem;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.nav-link:visited {
+    color: #fff;
+}
+
+/*offcanvas*/
+.offcanvas {
+    background-color: rgb(27, 27, 27);
+    ;
+}
+
+.bi-three-dots-vertical {
+    color: #fff;
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+/* hero */
+.hero {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.315)), url('../assets/hero1-1.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+
+
+}
+
+.hero-container {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.hero__title {
+    color: #fff;
+    font-size: 4.38rem;
+    text-shadow: 0.1px 0.1px 8px rgba(0, 0, 0, 0.534);
+
+}
+
+
+.hero h1 span {
+    font-size: 5.8rem;
+    font-weight: 800;
+    letter-spacing: 0.25rem;
+    margin: 0;
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.712);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 0.1px 0.1px 8px rgba(0, 0, 0, 0.534);
+    font-family: 'Rubik',
+        sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 420px) {
+    .hero {
+       
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-container {
+        width: 100%;
+
+    }
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+/* card */
+.card-div {
+    padding: 7rem 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    color: #fff;
+
+}
+
+.card-div h3 {
+    font-size: 2.3rem;
+    font-weight: 600;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+
+}
+
+.card-item {
+    min-width: 350px;
+    width: 22vw;
+    box-shadow: 0 0 15px #000;
+    margin: 1rem 10px;
+
+
+}
+
+.card img {
+    object-fit: cover;
+    height: 30rem;
+
+}
+
+
+@media screen and (max-width: 420px) {
+    .card-div h3 {
+        font-size: 2.1rem;
+        font-weight: 600;
+
+    }
+}
+
+/* banner */
+.banner {
+
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.315)),
+        url('../assets/libro.jpeg');
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.banner h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 8px black;
+}
+
+@media screen and (max-width: 420px) {
+    .banner h3 {
+        font-size: 2.5rem;
+    }
+}
+
+/* footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    text-align: center;
+    padding-top: 2.5rem;
+    margin-bottom: 0;
+
+}
+
+footer img {
+    margin: 1.5rem;
+}
+
+footer li {
+    list-style: none;
+    padding: .5rem 0;
+    font-size: 1.2rem;
+}
+
+.navbar-brand--footer {
+    margin-bottom: 1.5rem;
+    padding: 10px;
+
+    display: block;
+}
+
+
+.footer-list li span {
+    font-weight: 600;
+}
+
+.footer-final {
+    padding-top: 1rem;
+}
+
+.footer-final h5 {
+    margin: 0 1rem;
+    padding: 3rem 0 2rem;
+    font-size: 1rem;
+}
