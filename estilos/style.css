@@ -82,7 +82,7 @@ nav {
 
 /* hero */
 .hero {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.315)), url('../assets/hero1OriginalCortada.png');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.315)), url('../assets/hero1OriginalCortada2.png');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,6 +118,12 @@ nav {
     letter-spacing: 0.2rem;
     font-weight: 300;
 }
+
+@media screen and (max-width: 750px) {
+.hero__title {
+    font-size: 3.8rem;
+}
+}
 @media screen and (max-width: 420px) {
     .hero {       
         width: 100%;
@@ -129,7 +135,7 @@ nav {
     }
 
     .hero__title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .hero p {
