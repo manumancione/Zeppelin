@@ -105,6 +105,8 @@ nav {
     font-size: 5.8rem;
     font-weight: 800;
     letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    font-family: 'Cormorant SC', serif;
 }
 
 
