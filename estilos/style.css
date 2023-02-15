@@ -11,7 +11,7 @@ nav {
 }
 
 .navbar {
-    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
     position: fixed;
     width: 100%;
     justify-content: space-between;
@@ -20,6 +20,7 @@ nav {
 .nav-posicion {
     justify-content: end;
 }
+
 .navbar-nav {
     justify-content: end;
     padding-right: 1rem;
@@ -32,12 +33,12 @@ nav {
 
 .botonCierre {
     background-color: inherit;
-    border: none;   
+    border: none;
 }
 
 .iconoCierre {
-     color: #fff;
-     font-size: 1.3rem;
+    color: #fff;
+    font-size: 1.3rem;
 }
 
 @media screen and (max-width: 420px) {
@@ -63,7 +64,7 @@ nav {
 
 /*offcanvas*/
 .offcanvas {
-    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
     ;
 }
 
@@ -76,22 +77,22 @@ nav {
     border: none;
 }
 
-.nav-boton i{
+.nav-boton i {
     font-size: 2.3rem;
 }
 
 /* hero */
 .hero {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.315)), url('../assets/hero1OriginalCortada2.png');
+    background-image: url('../assets/hero.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-attachment: fixed;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: right;
+    justify-content: end;
+    text-align: center;
 }
 
 .hero-container {
@@ -100,49 +101,60 @@ nav {
 }
 
 .hero__title {
-    color: #fff;    
+    color: #fff;
     text-shadow: 0.1px 0.1px 8px rgba(0, 0, 0, 0.534);
-    font-size: 5.8rem;
+    font-size: 5.4rem;
     font-weight: 800;
     letter-spacing: 0.25rem;
     text-transform: uppercase;
-    font-family: 'Cormorant SC', serif;
+    font-family: 'Playfair Display',
+        serif;
+
 }
 
 
 .hero p {
-    color: rgba(255, 255, 255, 0.712);
-    font-size: 1.5rem;
+    color: #fff;
+    font-size: 1.8rem;
     text-transform: uppercase;
     text-shadow: 0.1px 0.1px 8px rgba(0, 0, 0, 0.534);
-    font-family: 'Rubik',
-        sans-serif;
+    font-family: 'Playfair Display',
+        serif;
     letter-spacing: 0.2rem;
-    font-weight: 300;
+    font-weight: 600;
+    padding-bottom: 8rem;
+    padding-top: 2rem;
+    padding-left: 14rem;
 }
 
-@media screen and (max-width: 750px) {
-.hero__title {
-    font-size: 3.8rem;
-}
-}
-@media screen and (max-width: 420px) {
-    .hero {       
-        width: 100%;
-        text-align: center;
-    }
-
-    .hero-container {
-        width: 100%;
+@media screen and (max-width: 800px) {
+    .hero p {      
+        padding-left: 0rem;
+        font-size: 1.4rem;
     }
 
     .hero__title {
-        font-size: 3rem;
+        font-size: 4.7rem;
     }
+}
 
-    .hero p {
-        font-size: 1.2rem;
+
+@media screen and (max-width: 500px) {
+    .hero {
+        width: 100%;
+        text-align: center;
     }
+ .hero__title {
+     font-size:3.8rem;
+ }
+
+  .hero p {
+     
+      font-size: 1.2rem;
+  }
+    .hero-container {
+        width: 100%;
+    }   
 }
 
 /* card */
@@ -192,7 +204,7 @@ nav {
 .banner {
 
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.315)),
-        url('../assets/libroCortada.jpg');
+        url('http://drive.google.com/uc?export=view&id=1luvW5R0hW7b6humhm1WM98Zb91rPZaTM');
     height: 65vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,11 +215,13 @@ nav {
     justify-content: center;
     background-color: rgba(0, 0, 0);
 }
+
 @media screen and (max-width: 700px) {
     .banner {
         height: 50vh;
     }
 }
+
 .banner h3 {
     font-size: 2.5rem;
     color: #fff;
@@ -263,11 +277,11 @@ footer li {
 
 /* pagina permiso precario */
 
-.documento-pdf-container{
-    background-color: #000;   
+.documento-pdf-container {
+    background-color: #000;
 }
 
-.documento-pdf{ 
+.documento-pdf {
     width: 100%;
     height: 700px;
 }
