@@ -1,35 +1,29 @@
 /* estilos generales */
-* {
-    font-family: 'Cormorant',
-        serif;
-}
 
 
 /* navbar */
-nav {
-    position: fixed;
+.navbar-brand {
+    color: #fff;
+    font-family: "Sanchez",
+        serif;
+    font-size: 1.6rem;
+}
+
+.navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.603);
 }
 
 .navbar {
-    background-color: rgb(0, 0, 0);
-    position: fixed;
-    width: 100%;
-    justify-content: space-between;
+    background-color: #1A2A40;
+    font-family: "Roboto",
+        sans-serif;
+    font-style: normal;
 }
 
-.nav-posicion {
-    justify-content: end;
-}
 
-.navbar-nav {
-    justify-content: end;
+/* .navbar-nav {
     padding-right: 1rem;
-}
-
-.navbar-brand img {
-    width: 7rem;
-    margin-left: 2rem;
-}
+} */
 
 .botonCierre {
     background-color: inherit;
@@ -41,17 +35,22 @@ nav {
     font-size: 1.3rem;
 }
 
-@media screen and (max-width: 420px) {
+/* @media screen and (max-width: 420px) {
     .navbar-brand img {
         width: 5.5rem;
         margin-left: 0.5rem;
+    } 
+} */
+
+@media screen and (max-width: 991px) {
+    .desaparecer {
+        display: none !important;
     }
 }
 
 .nav-link {
     color: #fff;
-    letter-spacing: 0.12rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .nav-link:hover {
@@ -62,10 +61,14 @@ nav {
     color: #fff;
 }
 
+
+
+
+
 /*offcanvas*/
+
 .offcanvas {
-    background-color: rgb(0, 0, 0);
-    ;
+    background-color: #1A2A40;
 }
 
 .bi-three-dots-vertical {
@@ -81,14 +84,15 @@ nav {
     font-size: 2.3rem;
 }
 
+
+
 /* hero */
 .hero {
-    background-image: url('../assets/hero3.jpg');
+    background-image: url('../assets/fondoMontanas.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -96,187 +100,330 @@ nav {
 }
 
 .hero-container {
-    width: 70%;
-    margin: 0 auto;
+    margin: auto auto;
+    font-family: "Sanchez",
+        serif;
 }
 
 .hero__title {
     color: #fff;
-    text-shadow: 0.1px 0.1px 8px rgba(0, 0, 0, 0.534);
     font-size: 5.4rem;
-    font-weight: 800;
-    letter-spacing: 0.25rem;
-    text-transform: uppercase;
-    font-family: 'Playfair Display',
-        serif;
-
-}
-
-
-.hero p {
-    color: #fff;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    text-shadow: 0.1px 0.1px 8px rgba(0, 0, 0, 0.534);
-    font-family: 'Playfair Display',
-        serif;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-    padding-bottom: 8rem;
-    padding-top: 2rem;
-    padding-left: 14rem;
-}
-
-@media screen and (max-width: 800px) {
-    .hero p {      
-        padding-left: 0rem;
-        font-size: 1.4rem;
-    }
-
-    .hero__title {
-        font-size: 4.7rem;
-    }
-}
-
-
-@media screen and (max-width: 500px) {
-    .hero {
-        width: 100%;
-        text-align: center;
-    }
- .hero__title {
-     font-size:3.8rem;
- }
-
-  .hero p {
-     
-      font-size: 1.2rem;
-  }
-    .hero-container {
-        width: 100%;
-    }   
-}
-
-/* card */
-.card-div {
-    padding: 7rem 0;
-    background-color: rgba(0, 0, 0);
-    text-align: center;
-    color: #fff;
-}
-
-.card-div h3 {
-    font-size: 2.3rem;
-    font-weight: 600;
-
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 2rem;
-    justify-content: center;
-    padding: 2rem 0;
-
-}
-
-.card-item {
-    min-width: 350px;
-    width: 22vw;
-    box-shadow: 0 0 15px #000;
-    margin: 1rem 10px;
-}
-
-.card img {
-    object-fit: cover;
-    height: 30rem;
-}
-
-
-@media screen and (max-width: 420px) {
-    .card-div h3 {
-        font-size: 2.1rem;
-        font-weight: 600;
-    }
-}
-
-/* banner */
-.banner {
-
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.315)),
-        url('http://drive.google.com/uc?export=view&id=1luvW5R0hW7b6humhm1WM98Zb91rPZaTM');
-    height: 65vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0);
-}
-
-@media screen and (max-width: 700px) {
-    .banner {
-        height: 50vh;
-    }
-}
-
-.banner h3 {
-    font-size: 2.5rem;
-    color: #fff;
-    text-shadow: 1px 1px 8px black;
-}
-
-@media screen and (max-width: 420px) {
-    .banner h3 {
-        font-size: 2.5rem;
-    }
-}
-
-/* footer */
-footer {
-    background-color: rgba(0, 0, 0);
-    color: #fff;
-    text-align: center;
-    padding-top: 2.5rem;
     margin-bottom: 0;
 }
 
-footer img {
-    margin: 1.5rem;
+.hero p {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* carousel */
+
+
+
+.carousel-inner {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 80vw;
+
+}
+
+
+.carousel-container {
+    background: #1A2A40;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1A2A40, #96A9B6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1A2A40, #96A9B6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+}
+
+
+.carousel-control-next-icon {
+    z-index: 99;
+}
+
+.texto-carousel {
+    background: #48738E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1C2F45, #48738E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #48738E, #1C2F45);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 4.5rem;
+    position: absolute;
+    left: 1rem;
+    width: 22%;
+
+    padding-top: 11.5rem;
+    padding-left: 2rem;
+    height: 80vh;
+}
+
+.texto-carousel h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Sanchez",
+        serif;
+    white-space: nowrap;
+}
+
+.texto-carousel h3 {
+    color: #fff;
+    font-size: 8rem;
+    white-space: nowrap;
+}
+
+.video-carousel {
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    width: 100vw !important;
+    min-width: 500px;
+    overflow: hidden !important;
+}
+
+.video-carousel video {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.div-video {
+    position: absolute;
+    right: 0;
+}
+
+@media (min-width: 200px) and (max-width: 546px) {
+    .hero{
+        height: 90vh;
+    }
+    .carousel-inner {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .video-carousel {
+        margin: 0 auto;
+        padding: 0 auto;
+        background-size: cover;
+        height: 100%;
+        min-width: none;
+    }
+
+    .video-carousel video {
+        width: 100vw;
+    }
+
+    .texto-carousel {
+        padding-top: 4rem;
+        padding-left: 1rem;
+        height: 98%;
+        left: 0rem;
+        width: 22%;
+        margin: auto 0;
+       
+    }
+
+    .texto-carousel h4 {
+        font-size: 1rem;
+    }
+
+    .texto-carousel h3 {
+        font-size: 3rem;
+    }
+
+   
+
+    /* .video-carousel video {
+        margin: 0;
+        padding: 0;
+        height: 80vh;
+    } */
+}
+
+@media (min-width: 546px) and (max-width: 700px) {
+
+    .video-carousel {
+        margin: 0 auto;
+        padding: 0 auto;
+        height: 50vh;
+    }
+
+    .texto-carousel {
+        padding-top: 6rem;
+        padding-left: 1rem;
+        height: 80vh;
+    }
+
+    .texto-carousel h4 {
+        font-size: 1rem;
+    }
+
+    .texto-carousel h3 {
+        font-size: 4rem;
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 822px) {
+
+    .video-carousel {
+        margin: 0 auto;
+        padding: 0 auto;
+        height: 60vh;
+    }
+
+    .texto-carousel {
+        padding-top: 8rem;
+    }
+
+    .texto-carousel h4 {
+        font-size: 1rem;
+    }
+
+    .texto-carousel h3 {
+        font-size: 5rem;
+    }
+
+}
+
+@media (min-width: 822px) and (max-width: 855px) {
+
+    .video-carousel {
+        margin: 0 auto;
+        padding: 0 auto;
+        height: 60vh;
+    }
+
+    .texto-carousel {
+        padding-top: 7rem;
+    }
+
+    .texto-carousel h3 {
+        font-size: 5rem;
+    }
+
+
+    .texto-carousel h4 {
+        font-size: 1rem;
+    }
+}
+
+/* 
+@media screen and (max-width: 855px) {
+    .texto-carousel {
+        left: 0rem;
+    }
+
+    .texto-carousel h3 {
+        font-size: 6rem;
+    }
+} */
+
+/* banner */
+.banner {
+    background-color: #45718C;
+    color: #fff;
+}
+
+/* .banner h3{
+font-size: 2rem;
+} */
+
+
+
+/* footer */
+footer {
+    background-color: #1A2A40;
+    color: #fff;
+}
+
+.footer-container {
+    background-color: #45718C;
+}
+
+.footer-title {
+    padding-left: 3rem;
 }
 
 footer li {
     list-style: none;
-    padding: .5rem 0;
     font-size: 1.2rem;
+    background-color: #1A2A40;
+    font-family: "Roboto",
+        sans-serif;
+    padding: 1rem 3rem;
+    margin: 1rem;
 }
-
-.navbar-brand--footer {
-    margin-bottom: 1.5rem;
-    padding: 10px;
-    display: block;
-}
-
 
 .footer-list li span {
-    font-weight: 600;
-}
-
-.footer-final {
-    padding-top: 1rem;
+    padding-right: 2px;
 }
 
 .footer-final h5 {
-    margin: 0 1rem;
-    padding: 3rem 0 2rem;
     font-size: 1rem;
 }
 
+hr {
+    width: 2vw;
+    height: 3px;
+    background-color: #fff;
+    opacity: 100;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.div-footer {
+    height: 70vh;
+    min-width: 500px;
+}
+
+.div-footer img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .div-footer {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    footer li {
+        font-size: 1.1rem;
+        padding: .5rem 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-title {
+        padding: 1rem;
+    }
+
+    .footer-list {
+        padding: 1rem;
+    }
+
+    .footer-title {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    hr {
+        margin: 1rem auto .5rem;
+    }
+}
+
+
 
 /* pagina permiso precario */
-
 .documento-pdf-container {
     background-color: #000;
 }

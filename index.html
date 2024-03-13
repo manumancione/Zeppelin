@@ -5,18 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zeppeling Viajes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./assets/zeppelinIcon.ico" type="image/x-icon">
+
+    <!-- <link rel="shortcut icon" href="./assets/zeppelinIcon.ico" type="image/x-icon"> -->
+
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/1a7eb8c875.js" crossorigin="anonymous"></script>
+
     <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Cormorant:ital,wght@0,300;0,400;0,600;1,300&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sanchez:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
 
     <!-- css -->
     <link rel="stylesheet" href="./estilos/style.css">
@@ -24,25 +31,37 @@
 
 <body>
     <div>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/zeppelinLogo2.png" alt="logo de Zeppelin Viajes"></a>
-                <button class="navbar-toggler nav-boton" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span ><i class="bi bi-list"></i></span>
-                </button>
-                <div class="collapse navbar-collapse nav-posicion" id="navbarNav">
-                    <ul class="navbar-nav  justify-content-end">
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid ">
+                <!-- <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/zeppelinLogo2.png" alt="logo de Zeppelin Viajes"></a> -->
+                <div>
+                    <a class="navbar-brand px-2" href="./index.html">zeppelin</a>
+                </div>
+
+                <div>
+                    <button class="navbar-toggler nav-boton" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span><i class="bi bi-list"></i></span></button>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-evenly " id="navbarNav">
+                    <ul class="navbar-nav ">
                         <li class="nav-item  px-3">
                             <a class="nav-link" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item  px-3">
                             <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
-                        <li class="nav-item  px-3">
-                            <a class="nav-link" href="./pages/documento.html">Licencia Provisoria</a>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./pages/documento.html">Licencia</a>
                         </li>
+                    </ul>
+                </div>
+
+                <div class="desaparecer ">
+                    <ul class="navbar-nav">
                         <li class="nav-item  px-3">
                             <a class="nav-link"
                                 href="https://www.argentina.gob.ar/servicio/presentar-una-denuncia-contra-una-agencia-de-viajes"
@@ -59,16 +78,16 @@
             aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
 
-                <button type="button" class="text-reset botonCierre" data-bs-dismiss="offcanvas"
-                    aria-label="Close"><i class="bi bi-x-circle iconoCierre"></i></button>
+                <button type="button" class="text-reset botonCierre" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                        class="bi bi-x-circle iconoCierre"></i></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav mx-auto align-items-center">
                     <li class="nav-item pt-4">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item pt-4">
-                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                        <a class="nav-link" href="./index.html#contacto">Contacto</a>
                     </li>
                     <li class="nav-item pt-4">
                         <a class="nav-link" href="./pages/documento.html">Licencia Provisoria</a>
@@ -86,63 +105,199 @@
 
 
     <!-- hero -->
-    <div class="hero">
-        <div class="hero-container">           
-            <h1 class="hero__title">Zeppelin</h1>
+    <div class="hero container-fluid">
+        <div class="hero-container text-end">
+            <h1 class="hero__title">zeppelin</h1>
             <p>Atelier de viajes</p>
         </div>
     </div>
-  
+
 
 
     <main>
-        <div class="card-div">
-            <h3>Explorá el mundo</h3>
-          
-            <div class="card-container">
-                <div class="card-item">
-                    <img class="card-img" src="http://drive.google.com/uc?export=view&id=1aGw1zmPXQ_Mvs4nF0tRF8UMdbGpSxUfr" alt="Imagen del caribe">
-                </div>
-                <div class="card-item">
-                    <img class="card-img" src="http://drive.google.com/uc?export=view&id=1ooS5UX5qFnYH5atMjY2A0AS1soQ5IoAu" alt="Imagen de EEUU">
-                </div>
-                <div class="card-item">
-                    <img class="card-img" src="http://drive.google.com/uc?export=view&id=1ToC-2KXL1v6dp3gJy8njG62tmZj0Ec_v" alt="Imagen de Roma">
-                </div>
-                <div class="card-item">
-                    <img class="card-img" src="http://drive.google.com/uc?export=view&id=1y4imNnyoFrgUHaL5oRncX7AV_HqvFutA" alt="Imagen de Turquia">
-                </div>
-                 <div class="card-item">
-                    <img class="card-img" src="http://drive.google.com/uc?export=view&id=1myG0fwDbjzrvSSujlw4gJN5nhjuwcFCy" alt="Imagen de Aurora borial">
-                </div>
-                 <div class="card-item">
-                    <img class="card-img" src="http://drive.google.com/uc?export=view&id=1EVJnvnGjOAmACVJZr9bK_3PkKOpllMPn" alt="Imagen de un león">
+        <div class="container-fluid m-0 p-0">
+
+            <!-- carousel -->
+            <div class="carousel-container py-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                            aria-label="Slide 9"></button>
+
+                    </div>
+
+                    <div class="carousel-inner container">
+                        <div class="carousel-item active justify-content-end">
+
+                            <div class="texto-carousel">
+                                <h4>Animate a descubrir</h4>
+                                <h3>Argentina</h3>
+                            </div>
+
+                            <div class="video-carousel">
+                                <video src="./assets/argentina.mp4" type="video/mp4" autoplay loop preload="auto" muted>
+                                </video>                                
+                            </div>
+
+                        </div>
+                        <div class="carousel-item justify-content-end">
+                            <div class="texto-carousel">
+                                <h4>Animate a descubrir</h4>
+                                <h3>Andino</h3>
+                            </div>
+                            <div class="w-100 video-carousel">
+                                <video src="./assets/andino.mp4" type="video/mp4" autoplay loop preload="auto" muted>
+                                </video>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-end">
+                            <div class="texto-carousel">
+                                <h4>Animate a descubrir</h4>
+                                <h3>Brasil</h3>
+                            </div>
+                            <div class="w-100  video-carousel">
+                                <video src="./assets/brasil.mp4" type="video/mp4" autoplay loop preload="auto" muted>
+                                </video>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-end">
+                            <div class="texto-carousel">
+                                <h4>Animate a descubrir</h4>
+                                <h3>Caribe</h3>
+                            </div>
+                            <div class="video-carousel">
+                                <video src="./assets/caribe.mp4" type="video/mp4" autoplay loop preload="auto" muted>
+                                </video>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-end">
+                            <div class="texto-carousel">
+                                <h4>Animate a descubrir</h4>
+                                <h3 class="flex-wrap">EEUU y Canadá</h3>
+                            </div>
+                            <div class="video-carousel">
+                                <video src="./assets/eeuuYCanada.mp4" type="video/mp4" autoplay loop preload="auto" muted >
+                                </video>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-end">
+                            <div class="texto-carousel">
+                                <h4>Animate a descubrir</h4>
+                                <h3>Europa</h3>
+                            </div>
+                            <div class="video-carousel">
+                                <video src="./assets/europa.mp4" type="video/mp4" autoplay loop preload="auto" muted >
+                                </video>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-end">
+                            <div class="texto-carousel">
+                                <h4>Animate a descubrir</h4>
+                                <h3>Exóticos</h3>
+                            </div>
+                            <div class="video-carousel">
+                                <video src="./assets/exoticos.mp4" type="video/mp4" autoplay loop preload="auto" muted >
+                                </video>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-end">
+                            <div class="texto-carousel">
+                                <h4>Animate a descubrir</h4>
+                                <h3>Deportivos</h3>
+                            </div>
+                            <div class="video-carousel">
+                                <video src="./assets/deportivo.mp4" type="video/mp4" autoplay loop preload="auto" muted >
+                                </video>
+                            </div>
+                        </div>
+                        <div class="carousel-item justify-content-end">
+                            <div class="texto-carousel">
+                                <h4>Animate a descubrir</h4>
+                                <h3>Corporativos</h3>
+                            </div>
+                            <div class="video-carousel">
+                                <video autoplay src="./assets/corporativo.mp4" type="video/mp4" autoplay loop
+                                    preload="auto" muted>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="banner">
-            <h3>Todo para tu próxima escapada</h3>
+        <div class="banner py-4 text-center">
+            <h3>Conectamos mundos</h3>
         </div>
 
 
     </main>
 
-    <footer id="contacto">
-        <a class="navbar-brand navbar-brand--footer" href="./index.html"><img src="http://drive.google.com/uc?export=view&id=1zQKjmVRi2Nm2WK99SpNj0Oo2GrmedNNq"></a>
+    <footer class="pt-5 container-fluid" id="contacto">
+        <div class="row justify-content-center wrap">
+            <div class="col-5 px-0 div-footer">
+                <img src="./assets/fotoContacto3.jpg" alt="" class="img-fluid">
+            </div>
 
-        <ul class="footer-list">
-            <li><span>Teléfono:</span> +54 9 341 278 2501</li>
-            <li><span>Email:</span> driccomi@hotmail.com</li>
-              <li><span>Razón social:</span> Daniela Soledad Riccomi</li>
-            <li><span>Legajo N°:</span> 18354</li>
-        </ul>
-        <div class="footer-final">
-            <h5>Copyright 2022 Zeppelin Viajes | Todos los derechos reservados</h5>
+            <div class="footer-container col-4 column div-footer">
+                <hr>
+
+                <div class="footer-title">
+                    <h4 class="my-0">Conocé todos</h4>
+                    <h4 class="my-0">nuestros destinos</h4>
+                </div>
+
+
+                <ul class="footer-list d-inline-block">
+                    <li><span>Teléfono:</span> +54 9 341 278 2501</li>
+                    <li><span>Email:</span> info@zeppelinviajes.com.ar</li>
+                    <li><span><i class="bi bi-instagram px-1"></i></span>zavconectamosmundos</li>
+                </ul>
+
+            </div>
+
         </div>
+        <div class="py-5">
+            <div class="footer-final py-2 text-center">
+                <h5>Razon social: Daniela Riccomi | Legajo Nº 18354</h5>
+            </div>
+
+            <div class="footer-final py-2 text-center">
+                <h5>Copyright 2022 Zeppelin Viajes | Todos los derechos reservados</h5>
+            </div>
+
+        </div>
+
     </footer>
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
