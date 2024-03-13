@@ -17,7 +17,7 @@
     background-color: #1A2A40;
     font-family: "Roboto",
         sans-serif;
-    font-style: normal;
+    
 }
 
 
@@ -114,6 +114,7 @@
 .hero p {
     color: #fff;
     font-size: 1.1rem;
+    font-weight: 200;
 }
 
 /* carousel */
@@ -135,6 +136,9 @@
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #1A2A40, #96A9B6);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     padding-bottom: 5rem;
+     padding-top: 5rem;
+     
 }
 
 .carousel-indicators button {
@@ -168,6 +172,7 @@
 .texto-carousel h4 {
     color: #fff;
     font-size: 1rem;
+    font-weight: 200;
     font-family: "Sanchez",
         serif;
     white-space: nowrap;
@@ -175,7 +180,7 @@
 
 .texto-carousel h3 {
     color: #fff;
-    font-size: 8rem;
+    font-size: 6rem;
     white-space: nowrap;
 }
 
@@ -201,9 +206,10 @@
 }
 
 @media (min-width: 200px) and (max-width: 546px) {
-    .hero{
+    .hero {
         height: 90vh;
     }
+
     .carousel-inner {
         width: 100vw;
         margin: 0;
@@ -219,17 +225,18 @@
     }
 
     .video-carousel video {
-        width: 100vw;
+        width: 120vw;
+        overflow: hidden;
     }
 
     .texto-carousel {
-        padding-top: 4rem;
+        padding-top: 2rem;
         padding-left: 1rem;
         height: 98%;
         left: 0rem;
         width: 22%;
         margin: auto 0;
-       
+
     }
 
     .texto-carousel h4 {
@@ -237,10 +244,10 @@
     }
 
     .texto-carousel h3 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
-   
+
 
     /* .video-carousel video {
         margin: 0;
@@ -270,6 +277,8 @@
     .texto-carousel h3 {
         font-size: 4rem;
     }
+
+
 }
 
 
@@ -331,12 +340,14 @@
 /* banner */
 .banner {
     background-color: #45718C;
-    color: #fff;
+    color: #fff;   
 }
 
-/* .banner h3{
-font-size: 2rem;
-} */
+.banner h3 {
+     font-weight: 300;
+     font-size: 1.8rem;
+}
+
 
 
 
@@ -344,6 +355,7 @@ font-size: 2rem;
 footer {
     background-color: #1A2A40;
     color: #fff;
+    padding-top: 5rem;
 }
 
 .footer-container {
@@ -351,17 +363,22 @@ footer {
 }
 
 .footer-title {
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 footer li {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
     background-color: #1A2A40;
     font-family: "Roboto",
         sans-serif;
-    padding: 1rem 3rem;
+    padding: .8rem 3.5rem;
     margin: 1rem;
+}
+
+.footer-list {
+    padding: 1rem 0;
 }
 
 .footer-list li span {
@@ -370,6 +387,7 @@ footer li {
 
 .footer-final h5 {
     font-size: 1rem;
+    font-weight: 100;
 }
 
 hr {
@@ -377,7 +395,7 @@ hr {
     height: 3px;
     background-color: #fff;
     opacity: 100;
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-top: 2rem;
 }
 
@@ -391,10 +409,26 @@ hr {
     width: 100%;
 }
 
+.footer-container-final{
+    padding: 3rem 0 .6rem;
+}
+
+@media screen and (max-width: 999px) {
+    .div-footer {
+
+        text-align: center;
+    }
+
+    hr {
+        margin: 2rem auto 1.5rem;
+        
+    }
+}
+
 @media screen and (max-width: 500px) {
     .div-footer {
         min-width: 100%;
-        text-align: center;
+
     }
 
     footer li {
@@ -416,9 +450,7 @@ hr {
         text-align: center;
     }
 
-    hr {
-        margin: 1rem auto .5rem;
-    }
+
 }
 
 
@@ -432,3 +464,5 @@ hr {
     width: 100%;
     height: 700px;
 }
+
+/* coorecto */
