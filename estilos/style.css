@@ -17,13 +17,7 @@
     background-color: #1A2A40;
     font-family: "Roboto",
         sans-serif;
-
 }
-
-
-/* .navbar-nav {
-    padding-right: 1rem;
-} */
 
 .botonCierre {
     background-color: inherit;
@@ -35,14 +29,7 @@
     font-size: 1.3rem;
 }
 
-/* @media screen and (max-width: 420px) {
-    .navbar-brand img {
-        width: 5.5rem;
-        margin-left: 0.5rem;
-    } 
-} */
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.5px) {
     .desaparecer {
         display: none !important;
     }
@@ -63,10 +50,7 @@
 
 
 
-
-
 /*offcanvas*/
-
 .offcanvas {
     background-color: #1A2A40;
 }
@@ -83,7 +67,6 @@
 .nav-boton i {
     font-size: 2.3rem;
 }
-
 
 
 /* hero */
@@ -118,16 +101,11 @@
 }
 
 /* carousel */
-
-
-
 .carousel-inner {
     margin: 0 auto;
     padding: 0 auto;
     width: 80vw;
-
 }
-
 
 .carousel-container {
     background: #1A2A40;
@@ -138,7 +116,6 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-bottom: 5rem;
     padding-top: 5rem;
-
 }
 
 .carousel-indicators button {
@@ -146,7 +123,6 @@
     height: 10px !important;
     border-radius: 100% !important;
 }
-
 
 .carousel-control-next-icon {
     z-index: 99;
@@ -160,20 +136,39 @@
     background: linear-gradient(to bottom, #48738E, #1C2F45);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-size: 4.5rem;
-    position: absolute;
-    left: 1rem;
+    position: absolute;   
     width: 22%;
-
     padding-top: 11.5rem;
     padding-left: 2rem;
-    height: 80vh;
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+    margin: 0;   
+    left: 0;
+  top: auto;
+  z-index: 98;
+}
+
+.video-carousel {
+    margin: 0;
+    padding: 0;
+   height: 600px;
+   min-height: 600px;
+   max-height: 600px;
+    width: 100vw !important;
+    min-width: 500px;
+    overflow: hidden !important;
+       bottom: 0;
+       margin-bottom: 0 !important;
+       padding-bottom: 0;
+       position: relative;
 }
 
 .texto-carousel h4 {
     color: #fff;
     font-size: 1rem;
     font-weight: 200;
-    font-family: "Sanchez",
+    font-family: "Urbanist",
         serif;
     white-space: nowrap;
 }
@@ -184,20 +179,13 @@
     white-space: nowrap;
 }
 
-.video-carousel {
-    margin: 0;
-    padding: 0;
-    height: 80vh;
-    width: 100vw !important;
-    min-width: 500px;
-    overflow: hidden !important;
-}
 
 .video-carousel video {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .div-video {
@@ -220,7 +208,7 @@
         margin: 0 auto;
         padding: 0 auto;
         background-size: cover;
-        height: 100%;
+        /* height: 100%; */
         min-width: none;
     }
 
@@ -233,10 +221,9 @@
         padding-top: 2rem;
         padding-left: 1rem;
         height: 98.5%;
-        left: 0rem;
+        left: 0;
         width: 22%;
         margin: auto 0;
-
     }
 
     .texto-carousel h4 {
@@ -246,26 +233,29 @@
     .texto-carousel h3 {
         font-size: 4rem;
     }
-
 }
 
 @media (min-width: 546px) and (max-width: 700px) {
-     .carousel-inner {
-         width: 80vw;
-         margin: 0 auto;
-         padding: 0 auto;
-         height: 100%;
-     }
-     
+    .carousel-inner {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 0 auto;
+        height: 100%;
+    }
+
     .video-carousel {
         margin: 0 auto;
         padding: 0 auto;
         height: 50vh;
     }
+
     .texto-carousel {
         padding-top: 6rem;
         padding-left: 1rem;
         height: 100%;
+        margin: 0;
+        height: 80vh;
+        left: 0;
     }
 
     .texto-carousel h4 {
@@ -275,40 +265,34 @@
     .texto-carousel h3 {
         font-size: 4rem;
     }
-
-
 }
 
 
 @media (min-width: 700px) and (max-width: 822px) {
-     .carousel-inner {
-         width: 80vw;
-         margin: 0 auto;
-         padding: 0 auto;
-         height: 100%;
-     }
-
-    .video-carousel {  
-
-         margin: 0;
-         padding: 0;
-         padding-left: 1rem;
-         height: 100%;
+    .carousel-inner {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 0 auto;
+        height: 100%;
     }
 
-    .video-carousel video {
-     
+    .video-carousel {
+        margin: 0;
+        padding: 0;
+        padding-left: 1rem;
+        /* height: 100%; */
+    }
+
+    /* .video-carousel video {
         height: 100%;
         overflow: hidden;
-        
-    }
+    } */
 
-    .texto-carousel {
-        padding-top: 8rem;       
+    .texto-carousel {      
+        padding-left: 1rem;       
+        margin: 0;
+        /* height: 80vh; */
         left: 0;
-        
-        padding-left: 1rem;
-        height: 99%;
     }
 
     .texto-carousel h4 {
@@ -316,8 +300,8 @@
     }
 
     .texto-carousel h3 {
-        font-size: 5rem;    }
-
+        font-size: 5rem;
+    }
 }
 
 @media (min-width: 822px) and (max-width: 855px) {
@@ -330,29 +314,27 @@
     .video-carousel {
         margin: 0;
         padding: 0;
-        padding-left: 1rem;
+        /* padding-left: 1rem; */
         height: 80vh;
     }
 
-    /* .video-carousel video {
-      width: 160vw;
-      overflow: hidden;
-  } */
+   
     .texto-carousel {
         padding-top: 7rem;
+        margin: 0;
+        height: 80vh;
+        left: 0;
+        
     }
 
     .texto-carousel h3 {
         font-size: 5rem;
     }
 
-
     .texto-carousel h4 {
         font-size: 1rem;
     }
 }
-
-
 
 
 /* banner */
@@ -362,11 +344,9 @@
 }
 
 .banner h3 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.8rem;
 }
-
-
 
 
 /* footer */
@@ -378,10 +358,18 @@ footer {
 
 .footer-container {
     background-color: #45718C;
+    padding: 2.5rem 0;
+    align-items: center;
+    height: 100%;
 }
 
 .footer-title {
-    padding-left: 2rem;
+    padding-left: 3.5rem;
+    padding-bottom: 1rem;
+}
+
+.footer-title h4 {
+    font-weight: 400;
 }
 
 footer li {
@@ -391,17 +379,25 @@ footer li {
     background-color: #1A2A40;
     font-family: "Roboto",
         sans-serif;
-    padding: .8rem 3.5rem;
-    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+    margin: 1rem auto;
+    margin-left: 2rem;
 }
 
 .footer-list {
-    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60%;
 }
 
 .footer-list li span {
     padding-right: 2px;
 }
+
 
 .footer-final h5 {
     font-size: 1rem;
@@ -409,16 +405,16 @@ footer li {
 }
 
 hr {
-    width: 2vw;
-    height: 3px;
-    background-color: #fff;
-    opacity: 100;
-    margin-left: 2rem;
+    width: 3vw;
+    height: 3.5px;
+    background-color: rgba(255, 255, 255, .3);
+    opacity: 35;
+    margin-left: 3.5rem;
     margin-top: 2rem;
 }
 
 .div-footer {
-    height: 70vh;
+    height: 60vh;
     min-width: 500px;
 }
 
@@ -433,30 +429,41 @@ hr {
 
 @media screen and (max-width: 999px) {
     .div-footer {
-
+        height: 50vh;
         text-align: center;
     }
 
     hr {
-        margin: 2rem auto 1.5rem;
+        margin: 1.5rem auto;
+    }
 
+    .footer-title {
+        padding-left: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-container {
+        padding: 1.5rem 0;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (min-width: 360px) and (max-width: 500px) {
     .div-footer {
         min-width: 100%;
 
     }
 
+    .footer-container {
+        padding: 0;
+    }
+
     footer li {
         font-size: 1.1rem;
-        padding: .5rem 2rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: .8rem;
     }
 
     .footer-title {
-        padding: 1rem;
+        padding: 0rem 0 1.5rem;
     }
 
     .footer-list {
@@ -465,10 +472,12 @@ hr {
 
     .footer-title {
         padding: 1rem;
-        text-align: center;
     }
 
+    hr {
+        margin: 1.5rem auto 0rem;
 
+    }
 }
 
 
