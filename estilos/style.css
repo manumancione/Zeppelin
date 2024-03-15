@@ -335,12 +335,14 @@ hr {
     height: 450px;
     min-height: 420px;
     min-width: 450px;
+    max-width: 480px;
 }
 
 .div-footer img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    top: 0;
 }
 
 .footer-container-final {
