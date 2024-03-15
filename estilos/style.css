@@ -1,6 +1,5 @@
 /* estilos generales */
 
-
 /* navbar */
 .navbar-brand {
     color: #fff;
@@ -31,7 +30,7 @@
 
 @media screen and (max-width: 991.5px) {
     .desaparecer {
-        display: none !important;
+        display: none;
     }
 }
 
@@ -47,7 +46,6 @@
 .nav-link:visited {
     color: #fff;
 }
-
 
 
 /*offcanvas*/
@@ -125,7 +123,7 @@
 }
 
 .carousel-control-next-icon {
-    z-index: 99;
+    z-index: 100;
 }
 
 .texto-carousel {
@@ -135,62 +133,44 @@
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #48738E, #1C2F45);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 4.5rem;
-    position: absolute;   
-    width: 22%;
-    padding-top: 11.5rem;
-    padding-left: 2rem;
-    height: 600px;
-    min-height: 600px;
-    max-height: 600px;
-    margin: 0;   
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
     left: 0;
-  top: auto;
-  z-index: 98;
+    width: 25%;
+    height: 100%;
+    padding: 3rem 0 0 2rem;
 }
 
 .video-carousel {
-    margin: 0;
-    padding: 0;
-   height: 600px;
-   min-height: 600px;
-   max-height: 600px;
-    width: 100vw !important;
+    position: relative;
+    height: 600px;
+    width: 100vw;
     min-width: 500px;
-    overflow: hidden !important;
-       bottom: 0;
-       margin-bottom: 0 !important;
-       padding-bottom: 0;
-       position: relative;
+    overflow: hidden;
 }
 
 .texto-carousel h4 {
+    white-space: nowrap;
     color: #fff;
-    font-size: 1rem;
     font-weight: 200;
     font-family: "Urbanist",
         serif;
-    white-space: nowrap;
+    font-size: 1rem;
 }
 
 .texto-carousel h3 {
-    color: #fff;
-    font-size: 6rem;
     white-space: nowrap;
+    color: #fff;
+    font-size: 7rem;
 }
 
-
 .video-carousel video {
-    margin: 0;
-    padding: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.div-video {
-    position: absolute;
-    right: 0;
 }
 
 @media (min-width: 200px) and (max-width: 546px) {
@@ -204,11 +184,11 @@
         padding: 0;
     }
 
+    .carousel-control-next-icon {
+        display: none;
+    }
+
     .video-carousel {
-        margin: 0 auto;
-        padding: 0 auto;
-        background-size: cover;
-        /* height: 100%; */
         min-width: none;
     }
 
@@ -218,20 +198,12 @@
     }
 
     .texto-carousel {
-        padding-top: 2rem;
-        padding-left: 1rem;
-        height: 98.5%;
-        left: 0;
-        width: 22%;
-        margin: auto 0;
-    }
-
-    .texto-carousel h4 {
-        font-size: 1rem;
+        padding: 3rem auto;
     }
 
     .texto-carousel h3 {
-        font-size: 4rem;
+        font-size: 4.5rem;
+        white-space: normal;
     }
 }
 
@@ -243,96 +215,29 @@
         height: 100%;
     }
 
-    .video-carousel {
-        margin: 0 auto;
-        padding: 0 auto;
-        height: 50vh;
-    }
+    /* .video-carousel {      
+        height: 60vh;
+    } */
 
-    .texto-carousel {
-        padding-top: 6rem;
-        padding-left: 1rem;
-        height: 100%;
-        margin: 0;
-        height: 80vh;
-        left: 0;
-    }
-
-    .texto-carousel h4 {
-        font-size: 1rem;
-    }
 
     .texto-carousel h3 {
-        font-size: 4rem;
+        font-size: 5rem;
+        white-space: normal;
     }
 }
 
 
 @media (min-width: 700px) and (max-width: 822px) {
-    .carousel-inner {
-        width: 80vw;
-        margin: 0 auto;
-        padding: 0 auto;
-        height: 100%;
-    }
-
-    .video-carousel {
-        margin: 0;
-        padding: 0;
-        padding-left: 1rem;
-        /* height: 100%; */
-    }
-
-    /* .video-carousel video {
-        height: 100%;
-        overflow: hidden;
-    } */
-
-    .texto-carousel {      
-        padding-left: 1rem;       
-        margin: 0;
-        /* height: 80vh; */
-        left: 0;
-    }
-
-    .texto-carousel h4 {
-        font-size: 1rem;
-    }
 
     .texto-carousel h3 {
         font-size: 5rem;
+        white-space: normal;
     }
 }
 
 @media (min-width: 822px) and (max-width: 855px) {
-    .carousel-inner {
-        width: 80vw;
-        margin: 0 auto;
-        padding: 0 auto;
-    }
-
-    .video-carousel {
-        margin: 0;
-        padding: 0;
-        /* padding-left: 1rem; */
-        height: 80vh;
-    }
-
-   
-    .texto-carousel {
-        padding-top: 7rem;
-        margin: 0;
-        height: 80vh;
-        left: 0;
-        
-    }
-
     .texto-carousel h3 {
         font-size: 5rem;
-    }
-
-    .texto-carousel h4 {
-        font-size: 1rem;
     }
 }
 
@@ -351,16 +256,16 @@
 
 /* footer */
 footer {
+    padding-top: 5rem;
     background-color: #1A2A40;
     color: #fff;
-    padding-top: 5rem;
 }
 
 .footer-container {
-    background-color: #45718C;
+    height: 100%;
     padding: 2.5rem 0;
     align-items: center;
-    height: 100%;
+    background-color: #45718C;
 }
 
 .footer-title {
@@ -373,31 +278,30 @@ footer {
 }
 
 footer li {
+    padding: 1rem;
+    width: 80%;
+    margin: 1rem auto;
+    margin-left: 2rem;
     list-style: none;
     font-size: 1rem;
     font-weight: 300;
     background-color: #1A2A40;
     font-family: "Roboto",
         sans-serif;
-    padding: 1rem;
-    width: 80%;
-    margin: 1rem auto;
-    margin-left: 2rem;
 }
 
 .footer-list {
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 60%;
 }
 
 .footer-list li span {
     padding-right: 2px;
 }
-
 
 .footer-final h5 {
     font-size: 1rem;
@@ -405,12 +309,12 @@ footer li {
 }
 
 hr {
-    width: 3vw;
+    width: 20px;
     height: 3.5px;
-    background-color: rgba(255, 255, 255, .3);
-    opacity: 35;
     margin-left: 3.5rem;
     margin-top: 2rem;
+    opacity: 30;
+    background-color: rgba(255, 255, 255, .3);
 }
 
 .div-footer {
@@ -427,10 +331,37 @@ hr {
     padding: 3rem 0 .6rem;
 }
 
-@media screen and (max-width: 999px) {
+@media (min-width: 360px) and (max-width: 500px) {
+    .div-footer {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    hr {
+        margin: 0 auto 1rem;
+    }
+
+    .footer-title {
+        padding: 0 0 2rem;
+    }
+
+    .footer-list {
+        padding: 1rem;
+    }
+
+    .footer-list li {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
     .div-footer {
         height: 50vh;
         text-align: center;
+    }
+
+    .footer-container {
+        padding: 1.5rem 0;
     }
 
     hr {
@@ -438,48 +369,9 @@ hr {
     }
 
     .footer-title {
-        padding-left: 1.5rem;
-        padding-bottom: 2rem;
-    }
-
-    .footer-container {
-        padding: 1.5rem 0;
+        padding: 0 0 2rem;
     }
 }
-
-@media (min-width: 360px) and (max-width: 500px) {
-    .div-footer {
-        min-width: 100%;
-
-    }
-
-    .footer-container {
-        padding: 0;
-    }
-
-    footer li {
-        font-size: 1.1rem;
-        margin-bottom: .8rem;
-    }
-
-    .footer-title {
-        padding: 0rem 0 1.5rem;
-    }
-
-    .footer-list {
-        padding: 1rem;
-    }
-
-    .footer-title {
-        padding: 1rem;
-    }
-
-    hr {
-        margin: 1.5rem auto 0rem;
-
-    }
-}
-
 
 
 /* pagina permiso precario */
@@ -488,8 +380,7 @@ hr {
 }
 
 .documento-pdf {
-    width: 100%;
+    width: 100vw;
     height: 700px;
 }
 
-/* coorecto */
