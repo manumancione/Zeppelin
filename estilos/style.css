@@ -142,6 +142,7 @@
     margin: 4rem 7rem;
     z-index: 100;
     align-items: flex-end;
+    opacity:1;
 }
 
 @media (min-width: 1680px) {
