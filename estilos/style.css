@@ -117,10 +117,11 @@
 }
 
 .carousel-indicators button {
-    width: 10px !important;
-    height: 10px !important;
+    width: 11px !important;
+    height: 11px !important;
     border-radius: 50% ;
-    border: 1.8px solid rgb(10, 10, 10) !important;
+    border: 2px solid #fff !important;
+    background-color: inherit !important;
 }
 
 .carousel-control-next-icon {
@@ -199,13 +200,14 @@
     }
 
     .texto-carousel {
-        padding: 3rem auto;
+        padding: 3rem 1.7rem;
     }
 
     .texto-carousel h3 {
-        font-size: 4.5rem;
+        font-size: 3.2rem;
         white-space: normal;
     }
+  
 }
 
 @media (min-width: 546px) and (max-width: 700px) {
@@ -324,7 +326,7 @@ hr {
     width: 45px;
     height: 6px;
     margin-left: 3.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     opacity: 30;
     background-color: rgba(255, 255, 255, .55);
     border: none;
