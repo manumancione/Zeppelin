@@ -101,7 +101,7 @@
 /* carousel */
 .carousel-inner {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     width: 80vw;
 }
 
@@ -112,47 +112,66 @@
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #1A2A40, #96A9B6);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding-bottom: 4.5rem;
+    padding-top: 4.5em;
 }
 
 .carousel-indicators button {
-    width: 11px !important;
-    height: 11px !important;
+    width: 13px !important;
+    height: 13px !important;
     border-radius: 50%;
     border: 2px solid #fff !important;
     background-color: inherit !important;
+    margin-bottom: 2rem;
 }
 
+.carousel-indicators button:active {
+    background-color: red;
+    }
 .carousel-control-prev-icon {
-    background-image: url("../assets/flechaIzquierdaBC.png");
-    width: 3.1rem;
-    height: 3.1rem;
+    background-image: url("../assets/flecha-izquierdaBC1.png");
+    width: 4rem;
+    height: 4rem;
 
 }
 
 .carousel-control-next-icon {
-    background-image: url("../assets/flechaDerechaBC.png");
-    width: 3.1rem;
-    height: 3.1rem;
+    background-image: url("../assets/flecha-derechaBC1.png");
+    width: 4rem;
+    height: 4rem;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-    margin: 4rem 7rem;
+    margin: 6rem 8.5rem;
     z-index: 100;
     align-items: flex-end;
-    opacity:1;
+    opacity: 1;
 }
 
 @media (min-width: 1680px) {
 
     .carousel-control-next,
     .carousel-control-prev {
-        margin: 8rem 12rem;
+        margin: 10rem 14rem;
     }
 }
 
+.logo-carousel {
+    position: absolute;
+    right: 2.5rem;
+    top: 5rem;
+    width: 5rem;
+    height: 5rem;
+    z-index: 999000000000009 !important;    
+      box-sizing: content-box;
+}
+
+.logo-carousel img {
+    width: 100%;
+    height: 100%;
+    
+}
 
 .texto-carousel {
     background: #48738E;
@@ -170,12 +189,13 @@
     width: 25%;
     height: 100%;
     padding: 3rem 0 0 2rem;
+    margin: 0;
 }
 
 .video-carousel {
     position: relative;
-    height: 600px;
-    width: 100vw;
+    height: 90vh;
+    width: 90vw;
     min-width: 500px;
     overflow: hidden;
 }
@@ -236,6 +256,11 @@
         white-space: normal;
     }
 
+  
+
+    
+
+
 }
 
 @media (min-width: 546px) and (max-width: 700px) {
@@ -286,26 +311,45 @@
 
 /* footer */
 footer {
-    padding-top: 5rem;
+    padding: 5rem 0;
     background-color: #1A2A40;
     color: #fff;
 }
 
 .footer-container {
     height: 100%;
+    width: 90%;
+  font-weight: 700px;
     padding: 2.5rem 0;
-    align-items: center;
+   
     background-color: #45718C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+hr {
+    width: 45px;
+    height: 6px;
+  align-self: flex-start;
+  margin-left: 4rem;
+    margin-top: 1rem;
+    opacity: 30;
+    background-color: rgba(255, 255, 255, .55);
+    border: none;
 }
 
 .footer-title {
-    padding-left: 3.5rem;
+    align-self: flex-start;
+    margin-left: 4rem;
     padding-bottom: 1.5rem;
 }
 
 .footer-title h4 {
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+    text-align: left;
 }
 
 .footer-list {
@@ -316,10 +360,10 @@ footer {
 }
 
 .footer-list li {
-    padding: 0.5rem;
-    width: 80%;
-    margin: 0.5rem auto;
-    margin-left: 2rem;
+    padding: 1rem 4.5rem;
+    width: 100%;
+    margin: 1rem auto;
+   
     list-style: none;
     font-size: 1.2rem;
     font-weight: 300;
@@ -342,21 +386,14 @@ footer {
     font-weight: 100;
 }
 
-hr {
-    width: 45px;
-    height: 6px;
-    margin-left: 3.5rem;
-    margin-top: 1rem;
-    opacity: 30;
-    background-color: rgba(255, 255, 255, .55);
-    border: none;
-}
 
-.div-footer {
-    height: 450px;
+
+.div-footer {   
     min-height: 420px;
     min-width: 450px;
-    max-width: 480px;
+    width: 600px;
+    height: 90vh;
+    
 }
 
 .div-footer img {
