@@ -540,13 +540,13 @@ footer {
 .div-footer {
     min-height: 400px;
     height: 80vh;
-    width: 520px;
+    width: 550px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4) !important;
 }
 
 .div-footer-img {
     min-width: 400px;
-    width: 500px;
+    width: 520px;
      height: 80vh;
 }
 
