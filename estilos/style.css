@@ -176,7 +176,7 @@
 
 .logo-carousel {
     position: absolute;
-    right: 2.7rem;
+    right: 2.4rem;
     top: 5rem;
     width: 5rem;
     height: 5rem;
@@ -207,6 +207,13 @@
     margin: 0;
 }
 
+.pantalla{
+background-color: rgba(8, 8, 8, 0.3);
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
 .video-carousel {
     position: relative;
     height: 90vh;
@@ -232,12 +239,13 @@
 .texto-carousel h3 {
     white-space: nowrap;
     color: #fff;
-    font-size: 6rem;
+    font-size: 6.5rem;
     font-family: "Prata",
         serif;
-    font-weight: 800;
+    font-weight: 900;
     font-style: normal;
     padding-left: 3.5rem;
+    letter-spacing: 3px;
     margin: 0;
 }
 
@@ -291,7 +299,7 @@
 
     .logo-carousel {
         right: 2rem;
-        top: 4rem;
+        top: 3rem;
         height: 4rem;
         width: 4rem;
     }
@@ -342,7 +350,7 @@
 
     .logo-carousel {
         right: 2rem;
-        top: 4rem;
+        top: 3rem;
         height: 4rem;
         width: 4rem;
     }
@@ -392,7 +400,7 @@
     }
 
     .logo-carousel {
-        right: 2rem;
+        right: 2.6rem;
         top: 4rem;
         height: 4rem;
         width: 4rem;
@@ -467,6 +475,12 @@
         font-size: 5rem;
         white-space: nowrap;
     }
+     .logo-carousel {
+         right: 3.5rem;
+         top: 4rem;
+         height: 4rem;
+         width: 4rem;
+     }
 }
 
 @media (min-width: 993px) and (max-width: 1119px) {
@@ -478,6 +492,12 @@
         font-size: 5.5rem;
         white-space: nowrap;
     }
+     .logo-carousel {
+         right: 3.3rem;
+         top: 4rem;
+         height: 4rem;
+         width: 4rem;
+     }
 }
 
 @media (min-width: 1119px) and (max-width: 1210px) {
@@ -485,6 +505,12 @@
         font-size: 6.5rem;
         white-space: nowrap;
     }
+     .logo-carousel {
+         right: 3.1rem;
+         top: 4rem;
+         height: 4rem;
+         width: 4rem;
+     }
 }
 
 @media (min-width: 1680px) {
@@ -541,13 +567,14 @@ footer {
     min-height: 400px;
     height: 80vh;
     width: 550px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4) !important;
+   
 }
 
 .div-footer-img {
     min-width: 400px;
-    width: 520px;
+    width: 600px;
      height: 80vh;
+     background-color: #45718C;
 }
 
 .img-banner {
