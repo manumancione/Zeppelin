@@ -37,6 +37,10 @@
     .desaparecer {
         display: none;
     }
+
+    .navbar-brand {
+        padding-left: 1rem
+    }
 }
 
 .nav-link {
@@ -163,7 +167,7 @@
 
 .carousel-control-next,
 .carousel-control-prev {
-    margin: 6rem 8.5rem;
+    margin: 5rem 7rem;
     z-index: 100;
     align-items: flex-end;
     opacity: 1;
@@ -172,7 +176,7 @@
 
 .logo-carousel {
     position: absolute;
-    right: 2.5rem;
+    right: 2.7rem;
     top: 5rem;
     width: 5rem;
     height: 5rem;
@@ -198,8 +202,8 @@
     justify-content: center;
     position: absolute;
     left: 0;
-    width: 25%;
-    height: 100%;    
+    width: 23%;
+    height: 100%;
     margin: 0;
 }
 
@@ -221,7 +225,7 @@
     font-size: 1.2rem;
     padding-left: 3.5rem;
     padding-bottom: 2rem;
-     padding-top: 4rem;
+    padding-top: 4rem;
 
 }
 
@@ -284,12 +288,13 @@
         padding-left: 1rem;
 
     }
-       .logo-carousel {
-           right: 2rem;
-           top: 4rem;
-           height: 4rem;
-           width: 4rem;
-       }
+
+    .logo-carousel {
+        right: 2rem;
+        top: 4rem;
+        height: 4rem;
+        width: 4rem;
+    }
 
 }
 
@@ -330,8 +335,8 @@
     }
 
     .texto-carousel h4 {
-        padding-left: 1.5rem;         
-             padding-top: 1rem;        
+        padding-left: 1.5rem;
+        padding-top: 1rem;
 
     }
 
@@ -346,7 +351,21 @@
 
 }
 
-@media (min-width: 546px) and (max-width: 769px) {
+@media (max-width: 769px) {
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin: 4.5rem 6.5rem;
+    }
+}
+
+@media (min-width: 546px) and (max-width: 693px) {
     .carousel-inner {
         width: 100vw;
     }
@@ -363,9 +382,9 @@
         overflow: hidden;
     }
 
- .texto-carousel h4 {
-     padding-top: 1rem;
- }
+    .texto-carousel h4 {
+        padding-top: 1rem;
+    }
 
     .texto-carousel h3 {
         font-size: 5rem;
@@ -391,14 +410,15 @@
     }
 
     .texto-carousel {
-         padding-top: 1rem 0;
+        padding-top: 1rem 0;
     }
 
     .carousel-control-next,
     .carousel-control-prev {
-        margin: 5rem;
+        margin: 4.5rem 4.5rem;
     }
 }
+
 
 
 @media (min-width: 769px) and (max-width: 873px) {
@@ -409,9 +429,9 @@
         height: 100%;
     }
 
-     .texto-carousel h4 {
-         padding-top: 1rem;
-     }
+    .texto-carousel h4 {
+        padding-top: 1rem;
+    }
 
 
     .texto-carousel h3 {
@@ -428,7 +448,7 @@
 
     .carousel-control-next,
     .carousel-control-prev {
-        margin: 7rem 7rem;
+        margin: 4.5rem 5rem;
     }
 
     .carousel-control-next-icon,
@@ -506,11 +526,9 @@ footer {
 }
 
 .footer-container {
-
     width: 90%;
     font-weight: 700px;
     padding: 0;
-
     background-color: #45718C;
     display: flex;
     flex-direction: column;
@@ -585,17 +603,24 @@ hr {
 
 .div-footer {
     min-height: 400px;
-    min-width: 450px;
+    min-width: 400px;
     width: 550px;
     height: 80vh;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4) !important;
-
 }
+
+.div-footer-img {
+    min-width: 400px;
+    width: 550px;
+}
+
+
 
 .img-banner {
     height: 100%;
     width: 100%;
     object-fit: cover;
+
 }
 
 .footer-container-final {
@@ -610,17 +635,18 @@ hr {
 
 @media (min-width: 360px) and (max-width: 500px) {
     .div-footer {
-        min-width: 100%;
         text-align: center;
+        height: 550px;
     }
 
-    hr {
-        margin: 0 auto 1rem;
-        width: 30px;
+    .div-footer-img {
+        height: 500px;
     }
+
+  
 
     .footer-title {
-        padding: 0 0 2rem;
+        padding: 0rem;
     }
 
     .footer-list {
@@ -632,26 +658,31 @@ hr {
     }
 }
 
-@media (min-width: 500px) and (max-width: 999px) {
+@media (min-width: 500px) and (max-width: 1100px) {
     .div-footer {
-
         text-align: center;
+        height: 550px;
     }
 
+     .div-footer-img {
+         height: 500px;
+     }
     .footer-container {
-        padding: 1.5rem 0;
-    }
+        padding: 1.5rem 0;   }
 
-    hr {
-        margin: 1.5rem auto;
-        width: 35px;
-    }
+    
 
     .footer-title {
         padding: 0 0 2rem;
+        align-items: center;
     }
 }
+@media (min-width: 1100px) {
+    .div-footer-img {
+        width: 500px;
+    }
 
+}
 
 /* pagina permiso precario */
 .documento-pdf-container {
