@@ -637,6 +637,8 @@ hr {
     .div-footer {
         text-align: center;
         height: 550px;
+        width: 100vw;
+        min-width: none;
     }
 
     .div-footer-img {
