@@ -3,7 +3,14 @@
 /* navbar */
 .navbar-brand img {
     width: 8rem;
+}
 
+.navbar-brand {
+    padding-left: 2rem
+}
+
+.nav-item {
+    padding-right: 2rem
 }
 
 .navbar-brand:hover {
@@ -76,17 +83,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
-
 
 .hero-container {
     display: block;
     text-align: end;
-
 }
-
 
 .hero-container img {
     width: 22rem;
@@ -96,7 +98,16 @@
     color: #fff;
     font-size: 1.25rem;
     font-weight: 300;
+}
 
+@media screen and (max-width: 450px) {
+    .hero-container img {
+        width: 18rem;
+    }
+
+    .hero {
+        height: 90vh;
+    }
 }
 
 /* carousel */
@@ -106,9 +117,6 @@
     width: 80vw;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
-
-
-
 
 .carousel-container {
     background: #1A2A40;
@@ -122,11 +130,12 @@
 }
 
 .carousel-indicators button.active {
- background-color: #fff !important;
-  border: none !important;
+    background-color: #fff !important;
+    border: none !important;
     width: 16px !important;
     height: 16px !important;
 }
+
 .carousel-indicators button {
     width: 13px !important;
     height: 13px !important;
@@ -135,14 +144,13 @@
     background-color: inherit !important;
     margin-bottom: 2rem;
     transition: background-color .6s ease;
-}
 
+}
 
 .carousel-control-prev-icon {
     background-image: url("../assets/flecha-izquierdaBC1.png");
     width: 4rem;
     height: 4rem;
-
 }
 
 .carousel-control-next-icon {
@@ -150,6 +158,8 @@
     width: 4rem;
     height: 4rem;
 }
+
+
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -159,13 +169,6 @@
     opacity: 1;
 }
 
-@media (min-width: 1680px) {
-
-    .carousel-control-next,
-    .carousel-control-prev {
-        margin: 10rem 14rem;
-    }
-}
 
 .logo-carousel {
     position: absolute;
@@ -173,14 +176,13 @@
     top: 5rem;
     width: 5rem;
     height: 5rem;
-    z-index: 999000000000009 !important;
+    z-index: 1000;
     box-sizing: content-box;
 }
 
 .logo-carousel img {
     width: 100%;
     height: 100%;
-
 }
 
 .texto-carousel {
@@ -197,8 +199,7 @@
     position: absolute;
     left: 0;
     width: 25%;
-    height: 100%;
-    padding: 0;
+    height: 100%;    
     margin: 0;
 }
 
@@ -220,13 +221,14 @@
     font-size: 1.2rem;
     padding-left: 3.5rem;
     padding-bottom: 2rem;
-    padding-top: 5rem;
+     padding-top: 4rem;
+
 }
 
 .texto-carousel h3 {
     white-space: nowrap;
     color: #fff;
-    font-size: 9rem;
+    font-size: 7rem;
     font-family: "Prata",
         serif;
     font-weight: 800;
@@ -235,16 +237,64 @@
     margin: 0;
 }
 
+
+
 .video-carousel video {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-@media (min-width: 200px) and (max-width: 546px) {
-    .hero {
-        height: 90vh;
+@media (min-width: 360px) and (max-width: 442px) {
+    .carousel-inner {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: none;
+    }
+
+    .video-carousel {
+        min-width: 700px;
+        height: 600px;
+    }
+
+
+    .video-carousel video {
+        width: 160vw;
+        overflow: hidden;
+    }
+
+    .texto-carousel {
+        padding: 2rem 0rem;
+        width: 22vw;
+    }
+
+    .texto-carousel h3 {
+        font-size: 3.2rem;
+        white-space: normal;
+        padding-left: 1.5rem;
+
+    }
+
+    .texto-carousel h4 {
+        padding-left: 1rem;
+
+    }
+       .logo-carousel {
+           right: 2rem;
+           top: 4rem;
+           height: 4rem;
+           width: 4rem;
+       }
+
+}
+
+@media (min-width: 442px) and (max-width: 546px) {
+
 
     .carousel-inner {
         width: 100vw;
@@ -258,8 +308,10 @@
     }
 
     .video-carousel {
-        min-width: none;
+        min-width: 700px;
+        height: 600px;
     }
+
 
     .video-carousel video {
         width: 160vw;
@@ -267,22 +319,89 @@
     }
 
     .texto-carousel {
-        padding: 3rem 1.7rem;
+        padding: 2rem 0rem;
     }
 
     .texto-carousel h3 {
-        font-size: 3.2rem;
+        font-size: 4rem;
         white-space: normal;
+        padding-left: 1.5rem;
+
     }
 
+    .texto-carousel h4 {
+        padding-left: 1.5rem;         
+             padding-top: 1rem;        
 
+    }
 
+    .logo-carousel {
+        right: 2rem;
+        top: 4rem;
+        height: 4rem;
+        width: 4rem;
+    }
 
 
 
 }
 
-@media (min-width: 546px) and (max-width: 700px) {
+@media (min-width: 546px) and (max-width: 769px) {
+    .carousel-inner {
+        width: 100vw;
+    }
+
+    .video-carousel {
+        min-width: 700px;
+        height: 600px;
+    }
+
+
+
+    .video-carousel video {
+        width: 160vw;
+        overflow: hidden;
+    }
+
+ .texto-carousel h4 {
+     padding-top: 1rem;
+ }
+
+    .texto-carousel h3 {
+        font-size: 5rem;
+        white-space: normal;
+    }
+
+    .logo-carousel {
+        right: 2rem;
+        top: 4rem;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin: 5rem;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .texto-carousel {
+         padding-top: 1rem 0;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin: 5rem;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 873px) {
     .carousel-inner {
         width: 80vw;
         margin: 0 auto;
@@ -290,23 +409,69 @@
         height: 100%;
     }
 
+     .texto-carousel h4 {
+         padding-top: 1rem;
+     }
+
+
     .texto-carousel h3 {
-        font-size: 5rem;
+        font-size: 6rem;
         white-space: normal;
+    }
+
+    .logo-carousel {
+        right: 2rem;
+        top: 4rem;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin: 7rem 7rem;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 3rem;
+        height: 3rem;
     }
 }
 
+@media (min-width: 874px) and (max-width: 992px) {
+    .texto-carousel h4 {
+        padding-top: 4rem;
+    }
 
-@media (min-width: 700px) and (max-width: 822px) {
     .texto-carousel h3 {
         font-size: 5rem;
-        white-space: normal;
+        white-space: nowrap;
     }
 }
 
-@media (min-width: 822px) and (max-width: 855px) {
+@media (min-width: 993px) and (max-width: 1119px) {
+    .texto-carousel {
+        padding-top: 3.5rem;
+    }
+
     .texto-carousel h3 {
-        font-size: 5rem;
+        font-size: 5.5rem;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1119px) and (max-width: 1210px) {
+    .texto-carousel h3 {
+        font-size: 6.5rem;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1680px) {
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin: 10rem 14rem;
     }
 }
 
