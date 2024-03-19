@@ -52,9 +52,6 @@
     color: rgba(255, 255, 255, 0.603);
 }
 
-.nav-link:visited {
-    color: #fff;
-}
 
 
 /*offcanvas*/
@@ -74,6 +71,7 @@
 .nav-boton i {
     font-size: 2.3rem;
 }
+
 
 
 /* hero */
@@ -113,6 +111,8 @@
         height: 90vh;
     }
 }
+
+
 
 /* carousel */
 .carousel-inner {
@@ -498,9 +498,9 @@
 
 /* banner */
 .banner {
+    padding: 1.7rem 0;
     background-color: #45718C;
     color: #fff;
-    padding: 1.7rem 0;
 }
 
 .banner h3 {
@@ -514,9 +514,11 @@
 
 @media (max-width: 500px) {
     .banner h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
+
+
 
 /* footer */
 footer {
@@ -526,23 +528,40 @@ footer {
 }
 
 .footer-container {
-    width: 90%;
-    font-weight: 700px;
-    padding: 0;
-    background-color: #45718C;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    font-weight: 700px;
+    background-color: #45718C;
 }
+
+.div-footer {
+    min-height: 400px;
+    height: 80vh;
+    width: 520px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4) !important;
+}
+
+.div-footer-img {
+    min-width: 400px;
+    width: 500px;
+     height: 80vh;
+}
+
+.img-banner {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 hr {
     width: 50px;
     height: 6px;
     align-self: flex-start;
-    margin-left: 3.2rem;
-    margin-top: 1rem;
-    margin-bottom: 1.6rem;
+    margin: 1rem 0 1.6rem 3.5rem;
     opacity: 30;
     background-color: rgba(255, 255, 255, .55);
     border: none;
@@ -550,19 +569,18 @@ hr {
 
 .footer-title {
     align-self: flex-start;
-    margin-left: 3.2rem;
+    margin-left: 3.5rem;
     padding-bottom: 1rem;
 }
 
 .footer-title h4 {
+    margin: 2px 0;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     text-align: left;
     font-family: "Prata",
         serif;
     font-weight: 400;
-    font-style: normal;
-    margin: 2px 0;
 }
 
 .footer-list {
@@ -570,13 +588,13 @@ hr {
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
+    padding: 0;
 }
 
 .footer-list li {
-    padding: 1rem 4.5rem;
     width: 100%;
     margin: 1rem auto;
-
+    padding: 1rem 4.5rem;
     list-style: none;
     font-size: 1.2rem;
     font-weight: 300;
@@ -594,66 +612,38 @@ hr {
     padding-right: 2px;
 }
 
-.footer-final h5 {
-    font-size: 1rem;
-    font-weight: 100;
-}
-
-
-
-.div-footer {
-    min-height: 400px;
-    min-width: 400px;
-    width: 550px;
-    height: 80vh;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4) !important;
-}
-
-.div-footer-img {
-    min-width: 400px;
-    width: 550px;
-}
-
-
-
-.img-banner {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-}
-
-.footer-container-final {
-    padding: 3rem 0 0;
-}
-
 .icono-instagram {
     width: 30px;
     height: 30px;
     margin-right: 0.8rem;
 }
 
-@media (min-width: 360px) and (max-width: 500px) {
+
+@media (min-width: 350px) and (max-width: 499px) {
     .div-footer {
         text-align: center;
         height: 550px;
         width: 100vw;
-        min-width: none;
+        min-width: 360px;
     }
 
     .div-footer-img {
         height: 500px;
+        min-width: 360px;
+        overflow: hidden;
+        width: 100vw;
     }
-
-  
 
     .footer-title {
-        padding: 0rem;
+        padding: 0 0 1.5rem;
+
     }
 
-    .footer-list {
-        padding: 1rem;
+    .footer-title h4 {
+        font-size: 1.5rem;
     }
+
+   
 
     .footer-list li {
         font-size: 1rem;
@@ -661,30 +651,42 @@ hr {
 }
 
 @media (min-width: 500px) and (max-width: 1100px) {
+    .footer-container {
+        padding: 1.5rem 0;
+    }
+
     .div-footer {
         text-align: center;
         height: 550px;
+        width: 600px;
     }
 
-     .div-footer-img {
-         height: 500px;
-     }
-    .footer-container {
-        padding: 1.5rem 0;   }
-
-    
+    .div-footer-img {
+        height: 500px;
+        width: 600px;
+       
+    }
 
     .footer-title {
         padding: 0 0 2rem;
         align-items: center;
     }
-}
-@media (min-width: 1100px) {
-    .div-footer-img {
-        width: 500px;
-    }
 
+    
 }
+
+
+
+/* footer final */
+.footer-container-final {
+    padding: 3rem 0 0;
+}
+
+.footer-final h5 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
 
 /* pagina permiso precario */
 .documento-pdf-container {
