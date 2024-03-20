@@ -728,6 +728,12 @@ hr {
 }
 
 @media (min-width: 500px) and (max-width: 824px) {
+     .footer-list li {
+
+         padding: 1rem 1.5rem;
+
+     }
+
     .div-conteiner-ppal {
 
         margin: 0 auto;
@@ -746,7 +752,7 @@ hr {
 
     .div-footer {
         text-align: center;
-        height: 60vh;
+        height: 80vh;
         width: 70vw;
         min-width: none;
         margin: 0;
@@ -776,10 +782,6 @@ hr {
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
-
-
-
-
     .footer-title {
         padding: 0 0 1.5rem;
 
@@ -789,9 +791,11 @@ hr {
         font-size: 1.5rem;
     }
 
-    .footer-list li {
-        font-size: 1rem;
-    }
+  .footer-list li {
+    
+      padding: 1rem 1.2rem;
+  }
+  
 }
 
 
@@ -824,7 +828,7 @@ hr {
 
     .footer-list li {
         padding: 1rem 1.2rem;
-        ;
+        
     }
 
 }
