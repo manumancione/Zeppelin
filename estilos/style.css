@@ -40,8 +40,15 @@
     }
 
     .navbar-brand {
-        margin-left: 0.5rem;
-        padding-left: 0;
+     
+       padding-left: 0;
+       padding-right: 0;
+    }
+     .navbar-brand img{
+         margin-left: 0.8rem;
+     }
+    .nav-item {
+        padding-right: 0rem
     }
 }
 
@@ -303,13 +310,12 @@
         font-size: 2.9rem;
         white-space: normal;
         padding-left: 1.5rem;
-
     }
 
     .texto-carousel h4 {
-        padding-left: 1rem;
-
-    }
+        padding-left: 1.5rem;
+        font-size: 1.2rem;
+        }
 
     .logo-carousel {
         right: 40px;
@@ -483,12 +489,8 @@
 
     .texto-carousel {
         padding-top: 1rem 0;
-    }
-
-   
+    }   
 }
-
-
 
 @media (min-width: 813px) and (max-width: 992px) {
     .carousel-inner {
@@ -551,13 +553,13 @@
 
 }
 
-@media (min-width: 1045px) and (max-width: 1119px) {
+@media (min-width: 1045px) and (max-width: 1118px) {
     .texto-carousel {
         padding-top: 2.5rem;
     }
 
     .texto-carousel h3 {
-        font-size: 6.4rem;
+        font-size: 6.5rem;
         white-space: nowrap;
     }
 
@@ -569,7 +571,7 @@
     }
      .carousel-control-next,
      .carousel-control-prev {
-         margin: 4.5rem 70px;
+         margin: 4.5rem 65px;
      }
 }
 
@@ -935,7 +937,7 @@ hr {
     .div-footer-img {
         min-width: none;
         position: relative;
-        z-index: 999999999 !important;
+        z-index: 100 !important;
         left: 30px;
         width: 450px;
         height: 80vh;
